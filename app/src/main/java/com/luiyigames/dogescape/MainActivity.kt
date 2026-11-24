@@ -41,7 +41,7 @@ data class GridPos(val row: Int, val col: Int)
 
 @Composable
 fun DogEscapeEasyApp() {
-    var selectedLevelIndex by remember { mutableIntStateOf<Int?>(null) }
+    var selectedLevelIndex by remember { mutableStateOf<Int?>(null) }
 
     val currentIndex = selectedLevelIndex
     if (currentIndex == null) {
